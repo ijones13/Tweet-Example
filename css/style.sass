@@ -1,9 +1,48 @@
 $main-font: Helvetica, sans-serif
-$grey: #CCC
+$grey: #999
 
+body
+  margin: 100px
 
 .tweet-container
   font: 100% $main-font
-  margin: auto
+  margin: 0 auto
+  padding: 30px 40px
   border: 2px solid $grey
-  border-radius: 3px
+  border-radius: 5px
+  .name-lockup
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .avatar
+      border-radius: 5px
+      max-width: 50px
+      float: left
+      margin-right: 10px
+    .name
+      font-weight: bold
+      display: block
+      span
+        display: block
+        font-weight: normal
+        color: $grey
+        font-size: .8em
+  blockquote
+    font-size: 1.4em
+    margin-left: 0px
+    margin-right: 0px
+    font-family: georgia
+  .actions
+    border-bottom: 1px solid $grey
+    color: $grey
+    i
+      font-family: $main-font
+      margin: 10px 20px
+    .fa.fa-star
+      color: #FFB500
+  time
+    margin-top: 15px
+    color: $grey
+    font-size: 0.7em
+    display: block
